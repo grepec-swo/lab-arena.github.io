@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccessGraph Cloud - Managed OpenFGA Control Plane</title>
+    <meta name="description" content="Centralize your authorization models, version policies, and audit access with AccessGraph Cloud. Managed OpenFGA SaaS for Zanzibar-style auth.">
+    <meta name="keywords" content="OpenFGA management SaaS, Zanzibar-style auth, authorization as a service">
+    <meta property="og:title" content="AccessGraph Cloud - Managed OpenFGA Control Plane">
+    <meta property="og:description" content="Centralize your authorization models, version policies, and audit access with ease.">
+    <meta property="og:image" content="https://your-domain.com/social-preview.png">
+    <meta property="og:url" content="https://your-domain.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://your-domain.com">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold text-blue-600">AccessGraph Cloud</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#features" class="hover:text-blue-600">Product</a>
+                <a href="#pricing" class="hover:text-blue-600">Pricing</a>
+                <a href="#faq" class="hover:text-blue-600">FAQ</a>
+                <a href="https://openfga.dev/docs" target="_blank" class="hover:text-blue-600">Docs</a>
+            </nav>
+            <div class="hidden md:flex space-x-4">
+                <a href="#demo" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Start Free</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <nav class="px-4 py-2 space-y-2">
+                <a href="#features" class="block hover:text-blue-600">Product</a>
+                <a href="#pricing" class="block hover:text-blue-600">Pricing</a>
+                <a href="#faq" class="block hover:text-blue-600">FAQ</a>
+                <a href="https://openfga.dev/docs" target="_blank" class="block hover:text-blue-600">Docs</a>
+                <a href="#demo" class="block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Start Free</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="container mx-auto px-4 text-center relative z-10 hero-content">
+            <h2 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">Managed OpenFGA Control Plane</h2>
+            <p class="text-xl md:text-2xl mb-8 text-blue-100">Centralize your authorization models, version policies, and audit access with ease.</p>
+            <div class="space-x-4">
+                <a href="#demo" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl btn-primary">Start Free Trial</a>
+                <a href="#demo" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">Book Demo</a>
+            </div>
+        </div>
+        <!-- Floating elements for modern look -->
+        <div class="absolute top-10 left-10 w-20 h-20 bg-white bg-opacity-10 rounded-full floating-element"></div>
+        <div class="absolute bottom-10 right-10 w-16 h-16 bg-blue-300 bg-opacity-20 rounded-full floating-element" style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/2 right-20 w-12 h-12 bg-purple-300 bg-opacity-20 rounded-full floating-element" style="animation-delay: 4s;"></div>
+    </section>
+
+    <!-- Problem → Solution -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-8">From Chaos to Control</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-red-600">The Problem</h4>
+                    <ul class="space-y-2">
+                        <li>• Policy sprawl across multiple systems</li>
+                        <li>• Brittle authorization rules hard to maintain</li>
+                        <li>• Low visibility into who can access what</li>
+                        <li>• Manual audits and compliance headaches</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-green-600">The Solution</h4>
+                    <ul class="space-y-2">
+                        <li>• Centralized authorization modeling</li>
+                        <li>• Versioned policies with environment promotion</li>
+                        <li>• Comprehensive audit trails and reports</li>
+                        <li>• Automated compliance and security</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-16 text-gray-800">Key Features</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg feature-card">
+                    <i data-lucide="layout" class="w-16 h-16 text-blue-600 mb-6"></i>
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-800">Visual Model Designer</h4>
+                    <p class="text-gray-600 leading-relaxed">Design and visualize your authorization models with an intuitive drag-and-drop interface.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg feature-card">
+                    <i data-lucide="git-branch" class="w-16 h-16 text-blue-600 mb-6"></i>
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-800">Schema Versioning</h4>
+                    <p class="text-gray-600 leading-relaxed">Version your schemas and promote changes across development, staging, and production environments.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg feature-card">
+                    <i data-lucide="play" class="w-16 h-16 text-blue-600 mb-6"></i>
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-800">Playground & Tests</h4>
+                    <p class="text-gray-600 leading-relaxed">Test your policies in a safe environment before deploying to production.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg feature-card">
+                    <i data-lucide="upload" class="w-16 h-16 text-blue-600 mb-6"></i>
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-800">OpenFGA Compatible</h4>
+                    <p class="text-gray-600 leading-relaxed">Import and export models compatible with OpenFGA for seamless integration.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg feature-card">
+                    <i data-lucide="shield" class="w-16 h-16 text-blue-600 mb-6"></i>
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-800">Audit Trails</h4>
+                    <p class="text-gray-600 leading-relaxed">Comprehensive logs and reports on who accessed what and when.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg feature-card">
+                    <i data-lucide="users" class="w-16 h-16 text-blue-600 mb-6"></i>
+                    <h4 class="text-2xl font-semibold mb-4 text-gray-800">Multi-Tenant Projects</h4>
+                    <p class="text-gray-600 leading-relaxed">Manage multiple projects and environments with isolated access controls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">How It Works</h3>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-blue-600">1</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Model</h4>
+                    <p>Design your authorization model using our visual designer or import existing OpenFGA schemas.</p>
+                </div>
+                <div>
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-blue-600">2</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Connect</h4>
+                    <p>Integrate with your applications using OpenFGA SDKs. No changes to your existing code.</p>
+                    <pre class="bg-gray-100 p-2 rounded text-sm mt-2"><code>import { OpenFgaClient } from '@openfga/sdk';
+
+const fgaClient = new OpenFgaClient({
+  apiUrl: 'https://your-instance.openfga.dev',
+});</code></pre>
+                </div>
+                <div>
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-blue-600">3</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Observe & Audit</h4>
+                    <p>Monitor access patterns, run audits, and maintain compliance with detailed reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-8">Security & Compliance</h3>
+            <p class="text-lg mb-4">Your data is encrypted at rest and in transit. We support SSO and are SOC 2 Type II compliant.</p>
+            <p class="text-sm text-gray-600">All authorization data is processed securely, with no access to your sensitive information.</p>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-gradient-to-br from-white to-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-16 text-gray-800">Pricing</h3>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="pricing-card p-8 text-center">
+                    <h4 class="text-3xl font-semibold mb-6 text-gray-800">Starter</h4>
+                    <p class="text-5xl font-bold mb-6 text-blue-600">$0<span class="text-xl text-gray-600">/month</span></p>
+                    <ul class="text-left mb-8 space-y-3 text-gray-600">
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>1 project</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>10,000 requests/month</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Basic audit logs</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Community support</li>
+                    </ul>
+                    <a href="#demo" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl btn-primary">Start Free</a>
+                </div>
+                <div class="pricing-card featured p-8 text-center text-white">
+                    <div class="bg-yellow-400 text-black text-sm font-bold px-3 py-1 rounded-full inline-block mb-4">Most Popular</div>
+                    <h4 class="text-3xl font-semibold mb-6">Team</h4>
+                    <p class="text-5xl font-bold mb-6">$49<span class="text-xl opacity-80">/month</span></p>
+                    <ul class="text-left mb-8 space-y-3 opacity-90">
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-white mr-2"></i>5 projects</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-white mr-2"></i>100,000 requests/month</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-white mr-2"></i>Advanced audit & reports</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-white mr-2"></i>Email support</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-white mr-2"></i>SSO integration</li>
+                    </ul>
+                    <a href="#demo" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl btn-primary">Start Free Trial</a>
+                </div>
+                <div class="pricing-card p-8 text-center">
+                    <h4 class="text-3xl font-semibold mb-6 text-gray-800">Enterprise</h4>
+                    <p class="text-5xl font-bold mb-6 text-blue-600">Custom</p>
+                    <ul class="text-left mb-8 space-y-3 text-gray-600">
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Unlimited projects</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Custom request limits</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Dedicated support</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>On-premise deployment</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Custom integrations</li>
+                    </ul>
+                    <a href="#demo" class="bg-gray-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-900 transition-all duration-300 shadow-lg hover:shadow-xl">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-16 text-gray-800">Frequently Asked Questions</h3>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-2xl shadow-lg glass-section">
+                    <button class="faq-toggle w-full text-left font-semibold flex justify-between items-center text-lg">
+                        How long does setup take?
+                        <i data-lucide="chevron-down" class="w-6 h-6 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-4 text-gray-600 leading-relaxed">
+                        <p>Setup typically takes 15-30 minutes. You can import existing OpenFGA configurations or start from scratch with our visual designer.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg glass-section">
+                    <button class="faq-toggle w-full text-left font-semibold flex justify-between items-center text-lg">
+                        Is it compatible with OpenFGA?
+                        <i data-lucide="chevron-down" class="w-6 h-6 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-4 text-gray-600 leading-relaxed">
+                        <p>Yes, AccessGraph Cloud is fully compatible with OpenFGA. You can import/export models and use standard OpenFGA SDKs.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg glass-section">
+                    <button class="faq-toggle w-full text-left font-semibold flex justify-between items-center text-lg">
+                        What are the rate limits?
+                        <i data-lucide="chevron-down" class="w-6 h-6 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-4 text-gray-600 leading-relaxed">
+                        <p>Rate limits vary by plan: Starter (10k/month), Team (100k/month), Enterprise (custom). Contact us for higher limits.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg glass-section">
+                    <button class="faq-toggle w-full text-left font-semibold flex justify-between items-center text-lg">
+                        Where is data stored?
+                        <i data-lucide="chevron-down" class="w-6 h-6 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-4 text-gray-600 leading-relaxed">
+                        <p>Data is stored in secure, SOC 2 compliant data centers in the US. Enterprise plans offer custom data residency options.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg glass-section">
+                    <button class="faq-toggle w-full text-left font-semibold flex justify-between items-center text-lg">
+                        What kind of support do you offer?
+                        <i data-lucide="chevron-down" class="w-6 h-6 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden mt-4 text-gray-600 leading-relaxed">
+                        <p>Support varies by plan: Community forums (all), Email support (Team+), Dedicated account manager (Enterprise).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Form -->
+    <section id="demo" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-md">
+            <h3 class="text-3xl font-bold text-center mb-8">Start Your Free Trial</h3>
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+                <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded">
+                <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded">
+                <input type="text" name="company" placeholder="Company" class="w-full p-3 border rounded">
+                <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700">Start Free Trial</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 AccessGraph Cloud. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-blue-400">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-400">Terms of Service</a>
+                <a href="mailto:support@accessgraph.cloud" class="hover:text-blue-400">Contact</a>
+                <a href="#" class="hover:text-blue-400">Status</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
